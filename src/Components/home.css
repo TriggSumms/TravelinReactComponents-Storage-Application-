@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap');
+
+html{
+        background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.handy-logos.de%2Fdemo%2Foriginal%2Fmatrix_anim.gif&f=1&nofb=1);
+        background-size: cover; 
+        opacity: 100%;
+
+    }
+.titlehometext{ 
+        height: 100%;
+    
+        display: flex;
+
+        justify-content: space-evenly; /* This needs to be remembered */
+        text-align: center;
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: calc(10px + 2vmin);
+        color: white;
+  
+
+    }
+
+    /* Below is the controld for the operations NEON sign */
+.fact__collection {
+        color: #FB4264;
+        /* background-color: whitesmoke; */
+        background-color: rgba(255,255,255, 0.5);
+        color: inherit;
+        font-size: 15px;
+        line-height: 1.5em;
+        text-shadow: 0 0 1px  whitesmoke;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        border-radius: 80%;
+        border-style: groove;
+          /* Control the  timing of frames */
+        animation: glow 7.0s ease infinite;
+        -moz-animation: glow 5.0s ease infinite;
+        -webkit-animation: glow 5.0s ease infinite;
+      }
+      @keyframes glow {
+        0%,
+        100% {
+        /* text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px  #e62300, 0 0 40px  #e62300, 0 0 50px  #e62300, 0 0 60px #e62300, 0 0 70px #e62300; */
+           text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5 vw .5 vw .1vw #806914;
+          color: #FED128; 
+        }
+        50% {
+        /* text-shadow: 0 0 20px #fff, 0 0 30px #37dbc0, 0 0 40px  #37dbc0, 0 0 50px  #37dbc0, 0 0 60px  #37dbc0, 0 0 70px  #37dbc0, 0 0 80px #37dbc0; */
+             text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5 vw .5 vw .1vw #40340A;
+          color: #806914; 
+        }
+      }
+
+.fact__collectionEnhanced{
+    font-size: 22px;
+    text-shadow: 0 0 2px #e62300;
+    background-color: transparent;
+    animation: glow 12.0s ease infinite;
+    -moz-animation: glow 12.0s ease infinite;
+    -webkit-animation: glow 12.0s ease infinite;
+}
