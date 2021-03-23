@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html{
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.handy-logos.de%2Fdemo%2Foriginal%2Fmatrix_anim.gif&f=1&nofb=1);
+  background-size: cover; 
+  opacity: 100%;
+
+}
