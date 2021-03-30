@@ -7,6 +7,7 @@ import { NumberProvider } from './LilGagets/Calculator/NumberProvider';
 import { ShoppingList } from "./LilGagets/ShoppingList/shoppinglist";
 import { Quizzer } from "./LilGagets/Quizzer/quizzer";
 import { ToDoFullComp } from "./LilGagets/ToDoList/ToDoFullComp"
+import { WeatherApp } from "./LilGagets/WeatherApp/weatherApp"
 
 export const ApplicationViews = () => {
     return (
@@ -31,6 +32,9 @@ export const ApplicationViews = () => {
             </Route>
             <Route path="/ToDoFullComp">
                 <ToDoFullComp />
+            </Route>
+            <Route path="/weatherApp">
+                <WeatherApp />
             </Route>
         </>
     )
