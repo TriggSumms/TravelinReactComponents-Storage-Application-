@@ -57,28 +57,31 @@ export function MovieSelectorApp() {
 	};
 
 	return (
+   
+	<div className="movieAppContainer">
 		<div className='container-fluid movie-app'>
-			<div className='row d-flex align-items-center mt-4 mb-4'>
-				<MovieListHeading heading='Movies' />
+			<div className=' d-flex align-items-center mt-4 mb-4'>
+				<MovieListHeading heading='Movie Selector:' />
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
-			<div className='row'>
+			<div className=''>
 				<MovieList
 					movies={movies}
 					handleFavouritesClick={addFavouriteMovie}
 					favouriteComponent={AddFavourites}
 				/>
 			</div>
-			<div className='row d-flex align-items-center mt-4 mb-4'>
-				<MovieListHeading heading='Favourites' />
+			<div className=' d-flex align-items-center mt-4 mb-4'>
+				<MovieListHeading heading='Below is your favz Lis' />
 			</div>
-			<div className='row'>
+			<div className=''>
 				<MovieList
 					movies={favourites}
 					handleFavouritesClick={removeFavouriteMovie}
 					favouriteComponent={RemoveFavourites}
 				/>
 			</div>
+		</div>
 		</div>
 	);
 };
